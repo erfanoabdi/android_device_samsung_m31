@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/samsung/a51
 
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := a51nsxx,a51xx,a51
 
