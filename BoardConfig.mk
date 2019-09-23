@@ -37,5 +37,8 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 6826715520
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+
 # Inherit common board flags
 include device/samsung/universal9610-common/BoardConfigCommon.mk
