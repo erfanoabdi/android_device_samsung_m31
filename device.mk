@@ -24,6 +24,10 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # NFC
 PRODUCT_PACKAGES += \
     libnfc-nci \
