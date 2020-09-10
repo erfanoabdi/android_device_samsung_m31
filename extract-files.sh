@@ -29,7 +29,7 @@ export DEVICE=a51
 export DEVICE_COMMON=universal9610-common
 export VENDOR=samsung
 
-export DEVICE_BRINGUP_YEAR=2018
+export DEVICE_BRINGUP_YEAR=2020
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
 
