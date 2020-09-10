@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_starlte.mk
+    $(LOCAL_DIR)/lineage_a51.mk
 
 COMMON_LUNCH_CHOICES := \
-     lineage_starlte-userdebug \
-     lineage_starlte-eng \
-     lineage_starlte-user
+     lineage_a51-userdebug \
+     lineage_a51-eng \
+     lineage_a51-user

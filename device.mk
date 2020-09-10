@@ -20,7 +20,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 -include $(LOCAL_PATH)/product_prop.mk
 
 # Inherit common device configuration
-$(call inherit-product, device/samsung/universal9810-common/universal9810-common.mk)
+$(call inherit-product, device/samsung/universal9610-common/universal9610-common.mk)
 
 # Inherit device vendor
-$(call inherit-product-if-exists, vendor/samsung/starlte/starlte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/a51/a51-vendor.mk)

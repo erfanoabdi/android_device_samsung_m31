@@ -25,8 +25,8 @@ set -e
 LINEAGE_ROOT="$MY_DIR"/../../..
 
 # Required!
-export DEVICE=starlte
-export DEVICE_COMMON=universal9810-common
+export DEVICE=a51
+export DEVICE_COMMON=universal9610-common
 export VENDOR=samsung
 
 export DEVICE_BRINGUP_YEAR=2018
