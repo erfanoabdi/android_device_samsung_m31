@@ -19,5 +19,12 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Inherit common device configuration
 $(call inherit-product, device/samsung/universal9610-common/universal9610-common.mk)
 
+# Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 # Inherit device vendor
 $(call inherit-product-if-exists, vendor/samsung/a51/a51-vendor.mk)
