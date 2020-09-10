@@ -39,6 +39,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
 
+# Rootdir
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/fstab.exynos9611:$(TARGET_COPY_OUT_RAMDISK)/fstab.exynos9611
+
 # Screen density
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := xlarge
