@@ -19,6 +19,11 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Inherit common device configuration
 $(call inherit-product, device/samsung/universal9610-common/universal9610-common.mk)
 
+# Boot animation
+TARGET_BOOTANIMATION_HALF_RES := true
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # NFC
 PRODUCT_PACKAGES += \
     libnfc-nci \
@@ -33,6 +38,13 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
+
+# Screen density
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := xlarge
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+# A list of dpis to select prebuilt apk, in precedence order.
+PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
