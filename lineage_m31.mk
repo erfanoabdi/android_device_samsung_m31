@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/a51/device.mk)
+$(call inherit-product, device/samsung/m31/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
@@ -32,16 +32,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := a51
-PRODUCT_NAME := lineage_a51
+PRODUCT_DEVICE := m31
+PRODUCT_NAME := lineage_m31
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-A515F
+PRODUCT_MODEL := SM-M315F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := samsung/a51nsxx/a51:10/QP1A.190711.020/A515FXXU3BTF4:user/release-keys
+BUILD_FINGERPRINT := samsung/m31nsxx/m31:10/QP1A.190711.020/M315FXXU1ATG2:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRODUCT_NAME=a51nsxx \
-        PRIVATE_BUILD_DESC="a51nsxx-user 10 QP1A.190711.020 A515FXXU3BTF4 release-keys"
+        PRODUCT_NAME=m31nsxx \
+        PRIVATE_BUILD_DESC="m31nsxx-user 10 QP1A.190711.020 M315FXXU1ATG2 release-keys"

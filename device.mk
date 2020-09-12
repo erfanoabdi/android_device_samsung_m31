@@ -21,7 +21,7 @@ $(call inherit-product, device/samsung/universal9610-common/universal9610-common
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
-TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # fastbootd
@@ -61,4 +61,4 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Inherit device vendor
-$(call inherit-product-if-exists, vendor/samsung/a51/a51-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/m31/m31-vendor.mk)
