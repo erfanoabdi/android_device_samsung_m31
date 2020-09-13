@@ -28,13 +28,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     fastbootd
 
-# NFC
-PRODUCT_PACKAGES += \
-    libnfc-nci \
-    libnfc_nci_jni \
-    NfcNci \
-    Tag
-
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
