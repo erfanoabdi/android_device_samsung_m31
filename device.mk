@@ -53,6 +53,10 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Skip Mount
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/skip_mount.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/init/config/skip_mount.cfg
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
